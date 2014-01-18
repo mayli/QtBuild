@@ -4,5 +4,5 @@ before_install:
  - sudo apt-get install -qq wine mingw32 mingw32-binutils mingw32-runtime
  - wget http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz
 before_script:
- - tar xvf qt*.tar.gz
+ - tar xf qt*.tar.gz
 script:  cd qt* && ./configure -opensource -confirm-license -shared&&make
