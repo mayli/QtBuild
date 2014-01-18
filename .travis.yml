@@ -6,6 +6,6 @@ before_install:
  - wget http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz
 before_script:
  - tar xf qt*.tar.gz
- - cd && cd qt* && ./configure -opensource -confirm-license -static -qconfig minimal
- - cd && cd qt* &&make -j
+ - pwd&&cd qt* && ./configure -opensource -confirm-license -static -qconfig minimal
+ - pwd&&cd qt* &&make -j
 script: ls
