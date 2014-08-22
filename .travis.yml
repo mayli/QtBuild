@@ -7,5 +7,5 @@ before_install:
 before_script:
  - tar xf qt*.tar.gz
  - pwd&&cd qt* && ./configure -opensource -confirm-license -static -qconfig minimal
- - pwd&&cd qt* &&make -j
+ - pwd&&make -j
 script: ls
